@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Alineamos los elementos a los extremos */
+    align-items: center; /* Alineamos verticalmente los elementos al centro */
+}
+
+li {
+    float: left;
+    justify-content: center;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+#logo {
+    margin: 10px 20px; /* Ajusta los márgenes según tus necesidades */
+    width: 200px; /* Ajusta el ancho de la imagen según tus preferencias */
+    height: 75px; /* Ajusta la altura de la imagen según tus preferencias */
+    
+    
+}
+
+#compra {
+    width: 35px; /* Ajusta el ancho de la imagen según tus preferencias */
+    height: 35px; /* Ajusta la altura de la imagen según tus preferencias */
+    
+}
+
+
+
+#search-form {
+    margin-top: 10px; /* Ajusta el margen superior del formulario de búsqueda según tus necesidades */
+    
+}
+
+#search-form input[type="text"] {
+    padding: 5px;
+}
+
+#search-form button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-color: #777;
+}
+
+
+
