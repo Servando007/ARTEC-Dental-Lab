@@ -66,5 +66,48 @@ li a {
     background-color: #777;
 }
 
+/*Hasta esta parte del codigo del css es de la barra de navegacion */  
+
+/*esta parte tiene que ver con la galeria de imagenes */  
+.slider-frame {
+	width: 580px;
+    height: auto;
+	margin:0px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+  /*Hasta esta parte del codigo del css se acaba la galeria de imagenes o su carrusel */ 
+
 
 
