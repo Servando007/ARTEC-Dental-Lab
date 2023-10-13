@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+    <body>
+        <header>
+         <ul class="menu-principal">
+             <img src="imagenes/logo.jpg" alt="Logo" id="logo">
+             <li><a href="#">Inicio</a></li> 
+             <li><a href="#">Quienes somos</a></li>
+             <li><a href="#">Productos</a></li>
+             <li><a href="#">Preguntas Frecuentes</a></li>
+             <li><a href="#">Contactanos</a></li>
+             <li><a href="#login">Login</a></li>
+             <li><a href="#registro">Registro</a></li>
+             <img src="imagenes/compra.jpg" alt="Compra" id="compra">
+             <form action="#" method="get" id="search-form">
+               <input type="text" name="search" placeholder="Buscar">
+               <button type="submit">Buscar</button>
+             </form>
+           </ul>
+        </header>
+     
+        <div id="registro">
+         <h2>Formulario de Registro</h2>
+         <form action="#" method="post">
+             <label for="nombre">Nombre:</label><br>
+             <input type="text" id="nombre" name="nombre"><br>
+             <label for="telefono">Teléfono:</label><br>
+             <input type="tel" id="telefono" name="telefono"><br>
+             <label for="correo">Correo:</label><br>
+             <input type="email" id="correo" name="correo"><br>
+             <label for="pwd">Contraseña:</label><br>
+             <input type="password" id="pwd" name="pwd"><br>
+             <label for="direccion">Dirección:</label><br>
+             <input type="text" id="direccion" name="direccion"><br>
+             <input type="submit" value="Registrarse">
+         </form>
+        </div>
+     
+        <div id="login">
+         <h2>Iniciar Sesión</h2>
+         <form action="#" method="post">
+             <label for="correo">Correo:</label><br>
+             <input type="email" id="correo" name="correo"><br>
+             <label for="pwd">Contraseña:</label><br>
+             <input type="password" id="pwd" name="pwd"><br>
+             <input type="submit" value="Iniciar Sesión">
+         </form>
+        </div>
+     
+           
+</div>
+<div class="slider-frame">
+ <ul>
+     <li><img src="imagenes/trabajo1.jpg" alt=""></li>
+     <li><img src="imagenes/trabajo2.jpg" alt=""></li>
+     <li><img src="imagenes/trabajo3.jpeg" alt=""></li>
+     <li><img src="imagenes/trabajo4.jpg" alt=""></li>
+ </ul>
+</div>
+
+ <div class="contenedor">
+
+     <div id="infoextra">
+         <h2>Aqui iria info sobre del lugar donde se encuentra junto con sus numeros telefonicos y valores</h2>
+         <p>texto random</p>
+
+     </div>
+
+     <div id="titulo">
+         <h2>Aqui se pondria info de la empresa de quienes son</h2>
+         <p>texto random</p>
+
+     </div>
+
+     <div id="cuerpo">
+         <h2>aqui estaria el cuerpo de la pagina donde estaria su publicidad,indice,pedir productos,preguntas frecuentes </h2>
+
+
+         <ul class="mi-lista">
+             <li>indice</li>
+             <li>preguntas frecuentes </li>
+             <li> productos</li>
+             
+           </ul>
+           
+
+         <p>info general de la empresa</p>
+           
+           
+
+     </div>
+     
+
+ </div>
+
+ <footer>
+     <div class="fin">
+         <p>&copy; aqui irian nuevamente el contacto y las redes ademas de la direccion de la empresa</p>
+     </div>
+ </footer>
+ 
+ 
+
+
+        
+        
+    
+     
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var botonRegistro = document.querySelector('#registro');
+        var botonLogin = document.querySelector('#login');
+        botonRegistro.style.display = 'none'; // Ocultar el formulario de registro al cargar la página
+        botonLogin.style.display = 'none'; // Ocultar el formulario de inicio de sesión al cargar la página
+
+        var enlaceRegistro = document.querySelector('a[href="#registro"]');
+        enlaceRegistro.onclick = function() {
+            if (botonRegistro.style.display === 'none') {
+                botonRegistro.style.display = 'block'; // Mostrar el formulario de registro
+                botonLogin.style.display = 'none'; // Ocultar el formulario de inicio de sesión
+            } else {
+                botonRegistro.style.display = 'none'; // Ocultar el formulario de registro
+            }
+            return false; // Prevenir la navegación al hacer clic en el enlace
+        };
+
+        var enlaceLogin = document.querySelector('a[href="#login"]');
+        enlaceLogin.onclick = function() {
+            if (botonLogin.style.display === 'none') {
+                botonLogin.style.display = 'block'; // Mostrar el formulario de inicio de sesión
+                botonRegistro.style.display = 'none'; // Ocultar el formulario de registro
+            } else {
+                botonLogin.style.display = 'none'; // Ocultar el formulario de inicio de sesión
+            }
+            return false; // Prevenir la navegación al hacer clic en el enlace
+        };
+    });
+</script>
+
+
+</html>
