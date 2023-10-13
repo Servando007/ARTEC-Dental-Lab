@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu-principal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-principal li {
+    float: left;
+    justify-content: center;
+  }
+  
+  .menu-principal li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Otros estilos específicos para el menú principal */
+  .menu-principal #logo {
+    margin: 10px 20px;
+    width: 200px;
+    height: 75px;
+  }
+  
+  .menu-principal #compra {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .menu-principal #search-form {
+    margin-top: 10px;
+  }
+  
+  .menu-principal #search-form input[type="text"] {
+    padding: 5px;
+  }
+  
+  .menu-principal #search-form button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .menu-principal #search-form button:hover {
+    background-color: #777;
+  }
+
+/*Hasta esta parte del codigo del css es de la barra de navegacion */  
+
+/*esta parte tiene que ver con la galeria de imagenes */  
+.slider-frame {
+	width: 580px;
+    height: auto;
+	margin:0px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+  /*Hasta esta parte del codigo del css se acaba la galeria de imagenes o su carrusel */  
+  
+  .contenedor{
+    margin: auto;
+    margin-top: 50px;
+    width: 960px;
+    height: 800px;
+    
+    border: 1px solid black;
+
+  }
+  
+  #infoextra{
+    float: right;
+    width: 300px;
+    height: 500px;
+    margin: 2px;
+    border: 1px solid black;
+
+  }
+
+  #titulo{
+    width: 640px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid black;
+  }
+
+  #cuerpo{
+    width: 640px;
+    height: 580px;
+    margin: 10px;
+    border: 1px solid black;
+  }
+
+  /* Restablece los estilos predeterminados de la lista */
+
+  
+  .mi-lista {
+    margin: 10px 0; /* Ajusta el margen vertical según tus necesidades */
+    padding: 0; /* Elimina el relleno predeterminado */
+    background-color: wheat;
+  }
+  
+  .mi-lista li {
+    margin: 0; /* Ajusta el margen para los elementos de la lista si es necesario */
+    padding: 5px; /* Ajusta el relleno para los elementos de la lista si es necesario */
+    display: block; /* Cambia la visualización a "block" para disposición vertical */
+  }
+  
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  /*Hasta esta parte del codigo del css se acaba el contenedor */  
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilo para el contenido dentro del pie de página */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo para el texto del pie de página */
+footer p {
+    margin: 0;
+}
+
+/* Estilo para el enlace del pie de página */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Cambiar el color del enlace al pasar el mouse */
+footer a:hover {
+    color: #ff9900;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+/* registro e inicio de sesion */
+
+
+
+
+
+
+
+#registro {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+#registro h2 {
+  text-align: center;
+  color: #333;
+}
+
+#registro label {
+  display: block;
+  margin-top: 10px;
+}
+
+#registro input[type="text"],
+#registro input[type="tel"],
+#registro input[type="email"],
+#registro input[type="password"] {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Añade esta línea */
+}
+
+#registro input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-top: 20px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#registro input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* login css */
+
+#login {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+#login h2 {
+  text-align: center;
+  color: #333;
+}
+
+#login label {
+  display: block;
+  margin-top: 10px;
+}
+
+#login input[type="email"],
+#login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Añade esta línea */
+}
+
+#login input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#login input[type="submit"]:hover {
+  background-color: #0056b3;
+}
